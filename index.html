@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#061018">
+  <title>Reefcalm — A calm aquarium for Apple TV</title>
+  <meta name="description" content="Reefcalm is a calm animated aquarium for Apple TV, with a clock and local weather. Coming soon to Apple TV.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="wordmark" href="index.html">Reefcalm</a>
+      <ul class="nav-links">
+        <li><a href="#what">What it does</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Coming soon to Apple TV</p>
+        <h1 id="hero-title">Reefcalm</h1>
+        <p class="lede">A calm aquarium for your Apple TV.</p>
+      </div>
+
+      <div class="tank" role="img" aria-label="Deep blue water with soft light rays, three simple fish, and bubbles.">
+        <svg class="scene" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1c7d9a"/>
+              <stop offset="22%" stop-color="#0f5a72"/>
+              <stop offset="58%" stop-color="#0b4156"/>
+              <stop offset="100%" stop-color="#061e2c"/>
+            </linearGradient>
+            <radialGradient id="glow" cx="46%" cy="0%" r="68%">
+              <stop offset="0%" stop-color="#e7f6f1" stop-opacity="0.34"/>
+              <stop offset="38%" stop-color="#8ec4cc" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#8ec4cc" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="raygrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f4fbf8" stop-opacity="0.38"/>
+              <stop offset="48%" stop-color="#d7efe8" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="#d7efe8" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#041821" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#03141c" stop-opacity="0.72"/>
+            </linearGradient>
+          </defs>
+          <rect width="1600" height="900" fill="url(#water)"/>
+          <rect width="1600" height="900" fill="url(#glow)"/>
+          <g fill="url(#raygrad)">
+            <polygon class="ray ray-1" points="180,-40 290,-40 560,940 250,940"/>
+            <polygon class="ray ray-2" points="460,-40 560,-40 760,940 420,940"/>
+            <polygon class="ray ray-3" points="780,-30 940,-30 1080,940 700,940"/>
+            <polygon class="ray ray-4" points="1120,-40 1220,-40 1040,940 820,940"/>
+          </g>
+          <path fill="#041821" opacity="0.45" d="M0 790 C220 730 380 770 560 735 C760 690 920 760 1120 730 C1320 698 1460 760 1600 735 L1600 900 L0 900 Z"/>
+          <rect y="760" width="1600" height="140" fill="url(#floor)"/>
+        </svg>
+
+        <div class="swimmer s1" aria-hidden="true">
+          <svg viewBox="0 0 220 110" focusable="false">
+            <path class="fish-body" d="M186 54 C164 24 108 16 68 30 C48 38 40 48 42 54 C40 62 50 76 72 82 C114 94 164 84 186 54 Z"/>
+            <path class="fish-body" d="M58 40 L10 20 L30 54 L10 88 L58 68 Z"/>
+            <path class="fish-fin" d="M108 60 C124 72 136 82 116 80 C102 76 98 66 108 60 Z"/>
+            <ellipse cx="118" cy="44" rx="22" ry="8" fill="#ffffff" opacity="0.16"/>
+            <circle class="fish-eye" cx="156" cy="46" r="3.1"/>
+          </svg>
+        </div>
+        <div class="swimmer s2" aria-hidden="true">
+          <svg class="face-left" viewBox="0 0 220 120" focusable="false">
+            <path class="fish-body" d="M176 60 C156 26 98 14 62 34 C42 46 36 56 38 62 C36 72 50 90 74 96 C112 106 158 92 176 60 Z"/>
+            <path class="fish-body" d="M54 46 L8 24 L28 62 L8 100 L54 78 Z"/>
+            <path class="fish-fin" d="M102 70 C120 84 134 96 112 94 C96 88 88 76 102 70 Z"/>
+            <ellipse cx="112" cy="50" rx="24" ry="10" fill="#ffffff" opacity="0.14"/>
+            <circle class="fish-eye" cx="146" cy="50" r="3.2"/>
+          </svg>
+        </div>
+        <div class="swimmer s3" aria-hidden="true">
+          <svg viewBox="0 0 220 110" focusable="false">
+            <path class="fish-body" d="M172 54 C150 30 98 24 66 40 C50 48 44 52 46 54 C44 60 56 74 72 76 C104 86 150 76 172 54 Z"/>
+            <path class="fish-body" d="M60 42 L18 24 L36 54 L18 84 L60 66 Z"/>
+            <path class="fish-fin" d="M98 60 C112 70 122 78 106 76 C94 72 88 64 98 60 Z"/>
+            <ellipse cx="114" cy="46" rx="16" ry="6" fill="#ffffff" opacity="0.14"/>
+            <circle class="fish-eye" cx="144" cy="48" r="2.7"/>
+          </svg>
+        </div>
+
+        <span class="bubble b1" aria-hidden="true"></span>
+        <span class="bubble b2" aria-hidden="true"></span>
+        <span class="bubble b3" aria-hidden="true"></span>
+        <span class="bubble b4" aria-hidden="true"></span>
+        <span class="bubble b5" aria-hidden="true"></span>
+        <span class="bubble b6" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="section" id="what" aria-labelledby="what-title">
+      <h2 id="what-title">What it does</h2>
+      <ul class="features">
+        <li>
+          <h3>A living animated aquarium</h3>
+          <p>Original fish, light, and bubbles, moving slowly across the screen.</p>
+        </li>
+        <li>
+          <h3>An elegant clock</h3>
+          <p>The time, set quietly into the picture.</p>
+        </li>
+        <li>
+          <h3>Local weather at a glance</h3>
+          <p>The weather where you are, provided by Apple Weather.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="design" aria-labelledby="design-title">
+      <h2 id="design-title">Calm and low power by design</h2>
+      <p>Reefcalm is meant to stay on the screen without asking for attention. Motion stays slow, the artwork is original, and little is shown at once, so the television can remain a quiet, low-power presence in the room.</p>
+    </section>
+
+    <section class="section" id="privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy</h2>
+      <p>Reefcalm is designed with no accounts, no ads, and no tracking. The app plans to use approximate location only to fetch local weather via Apple WeatherKit.</p>
+      <p class="more"><a href="privacy.html">Privacy summary</a></p>
+    </section>
+
+    <section class="section" id="support" aria-labelledby="support-title">
+      <h2 id="support-title">Support</h2>
+      <p>A support contact is coming soon.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Reefcalm</p>
+      <p>Weather in the app will be provided by Apple Weather.</p>
+    </div>
+  </footer>
+</body>
+</html>
