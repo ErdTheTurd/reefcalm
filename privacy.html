@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#f4efe4">
   <title>Privacy — Reefcalm</title>
-  <meta name="description" content="Reefcalm is designed with no accounts, no ads, and no tracking. Approximate location is used only to fetch local weather via Apple WeatherKit.">
+  <meta name="description" content="Reefcalm has no accounts, no ads, and no tracking. Location is used only to fetch local weather from Apple Weather, if you turn weather on.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,23 +16,38 @@
       <a class="brand" href="index.html">Reefcalm</a>
       <ul class="nav-links">
         <li><a href="privacy.html" aria-current="page">Privacy</a></li>
-        <li><a href="index.html#support">Support</a></li>
+        <li><a href="support.html">Support</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main" class="sheet" tabindex="-1">
     <h1>Privacy</h1>
-    <p>Reefcalm is designed with no accounts, no ads, and no tracking.</p>
-    <p>The app plans to use approximate location only to fetch local weather via Apple WeatherKit. That location is for the weather request. The app is not designed to use it for anything else.</p>
-    <p>Weather in the app will be provided by Apple Weather.</p>
+    <p>This policy is for the Reefcalm app on Apple TV. It was last updated on November 27, 2026.</p>
+
+    <h2>What Reefcalm does not do</h2>
+    <p>Reefcalm has no accounts. It does not include advertising, analytics, or tracking software. It does not sell information. It does not build a profile of you.</p>
+
+    <h2>What stays on the Apple TV</h2>
+    <p>Your choices — whether the clock and weather are shown, the time format, location mode, a city or ZIP you typed, and how many fish to draw — are stored on the device. They are not uploaded to a Reefcalm server. Reefcalm does not operate a server for the app, and it does not have user accounts.</p>
+
+    <h2>Weather and location</h2>
+    <p>Weather on the aquarium is optional. During onboarding, before the app asks for location permission, you can use this Apple TV’s location, enter a city or ZIP, or skip weather. You can change this later in Settings, or turn weather off.</p>
+    <p>If you choose “Use this Apple TV’s location” and leave weather on, Reefcalm asks for location permission and reads the device location only so it can request current conditions from Apple Weather (WeatherKit). The location is sent to Apple for that weather request. It is not sent to anyone else, and Reefcalm does not use it for anything else.</p>
+    <p>If you enter a city or ZIP, Reefcalm sends that text to Apple’s geocoder to find a place, then sends the resulting location to Apple Weather for current conditions. That text and location are not sent to anyone other than Apple, and only for this purpose.</p>
+    <p>If location is denied or a weather request fails, Reefcalm shows a short status on the aquarium, such as “Weather unavailable.” You can switch to a city or ZIP in Settings, or turn weather off.</p>
+    <p>Weather in the app is provided by Apple Weather. Reefcalm shows Apple’s required attribution with the weather.</p>
+    <p>Apple’s handling of information you send to WeatherKit or to Apple’s geocoder is covered by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+
+    <h2>Questions</h2>
+    <p>For a question about this policy, email <a href="mailto:erdunn706@gmail.com">erdunn706@gmail.com</a>.</p>
     <p><a href="index.html">Back to Reefcalm</a></p>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>© 2026 Reefcalm</p>
-      <p>Weather in the app will be provided by Apple Weather.</p>
+      <p>© 2026 Edward Dunn</p>
+      <p>Weather in the app is provided by Apple Weather.</p>
     </div>
   </footer>
 </body>

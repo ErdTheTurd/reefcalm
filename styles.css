@@ -670,3 +670,57 @@ p {
     border: 1px solid CanvasText;
   }
 }
+
+/* Screenshots from the Apple TV */
+
+.shots-block {
+  width: min(70rem, calc(100% - 2 * var(--pad)));
+}
+
+.shot-list {
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 2.25rem;
+}
+
+.shot {
+  margin: 0;
+}
+
+.shot .bezel {
+  padding: 0.42rem 0.42rem 0.68rem;
+}
+
+.shot img,
+.shot-in-tv {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.shot figcaption {
+  margin: 0.7rem 0 0;
+  max-width: 52ch;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.sheet h2 {
+  margin: 1.75rem 0 0.7rem;
+  font-family: var(--display);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+@media (min-width: 980px) {
+  .shot-list {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+}
