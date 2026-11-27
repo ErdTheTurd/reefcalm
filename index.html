@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#f4efe4">
   <title>Reefcalm — Fish swim on your TV</title>
-  <meta name="description" content="Reefcalm is an aquarium for Apple TV. Fish swim on the screen, the time sits in the corner, and you get today's temperature and conditions for where you are. Coming soon to Apple TV.">
+  <meta name="description" content="Reefcalm is an aquarium for Apple TV. Fish swim on the screen, the time sits in the corner, and optional weather comes from Apple Weather. Coming soon to Apple TV.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
       <a class="brand" href="index.html" aria-current="page">Reefcalm</a>
       <ul class="nav-links">
         <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="#support">Support</a></li>
+        <li><a href="support.html">Support</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +27,7 @@
       <div class="hero-grid">
         <div class="hero-copy">
           <h1 id="hero-title">Fish swim on your TV.</h1>
-          <p class="lede">The time sits in the corner. Today’s temperature and conditions, for where you are. Made to sip power, so it can run all evening.</p>
+          <p class="lede">An aquarium for the living room. The time sits in the corner. Weather is optional, and comes from Apple Weather when you want it.</p>
           <p class="soon">Coming soon to Apple TV.</p>
         </div>
 
@@ -118,30 +118,61 @@
               </div>
             </div>
           </div>
-          <figcaption>Illustration of the television, not a photograph. 7:41, Tue Apr 7, and 72° Clear are examples.</figcaption>
+          <figcaption>Illustration of the television, not a photograph. 7:41, Tue Apr 7, and 72° Clear are examples. Real screens from the app are below.</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="block" id="what" aria-labelledby="what-title">
       <h2 id="what-title">What it does</h2>
-      <p class="dek">On the main screen.</p>
+      <p class="dek">On the main screen, and in Settings.</p>
       <ul class="what-list">
         <li>
           <h3>Fish</h3>
-          <p>A few fish swim across the television. They were drawn for Reefcalm, and they move slowly.</p>
+          <p>A few fish swim across the television. They were drawn for Reefcalm, and they move slowly, among kelp and light on the sand.</p>
         </li>
         <li>
           <h3>Time</h3>
-          <p>Large, thin type in the corner, with the date under it.</p>
+          <p>Large, thin type in the corner, with the date under it. You can follow the system format, or switch to 12-hour or 24-hour in Settings.</p>
         </li>
         <li>
           <h3>Weather</h3>
-          <p>Today’s temperature and conditions, for where you are. Supplied by Apple Weather.</p>
+          <p>Optional. If you turn it on, Reefcalm fetches current conditions from Apple Weather. You can use this Apple TV’s location, or type a city or ZIP.</p>
         </li>
         <li>
-          <h3>Power</h3>
-          <p>Made to sip power, so it can run all evening.</p>
+          <h3>Remote</h3>
+          <p>After setup, press Play/Pause on the Siri Remote to open Settings. Press Menu, or choose Done, to go back to the aquarium.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block shots-block" id="screens" aria-labelledby="screens-title">
+      <h2 id="screens-title">From the Apple TV</h2>
+      <p class="dek">Screens from the app, captured in the Apple TV simulator at 1920×1080.</p>
+      <ul class="shot-list">
+        <li>
+          <figure class="shot">
+            <div class="bezel">
+              <img src="shots/onboarding.png" width="1920" height="1080" alt="Reefcalm onboarding on the aquarium. The panel explains that weather is optional, and offers Use this Apple TV’s location, Enter a city or ZIP, or Skip weather for now. The clock in the corner reads 2:44 PM, Friday, November 27.">
+            </div>
+            <figcaption>Onboarding comes first, before any location prompt. Weather is optional: you can use the Apple TV’s location, type a city or ZIP, or skip it.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="shot">
+            <div class="bezel">
+              <img src="shots/aquarium.png" width="1920" height="1080" alt="The Reefcalm aquarium filling the television: fish and kelp over sand, the clock at 2:44 PM, Friday, November 27, and the words Weather unavailable in the upper right.">
+            </div>
+            <figcaption>The main screen, with the clock on. The weather line here shows the empty state, “Weather unavailable,” which is what Reefcalm displays when it cannot fetch conditions. When a fetch succeeds, this corner shows current conditions from Apple Weather.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="shot">
+            <div class="bezel">
+              <img src="shots/settings.png" width="1920" height="1080" alt="Reefcalm Settings over the aquarium. Show clock is on, with System, 12-hour, and 24-hour time formats. Show weather is on, with a choice of This Apple TV or City or ZIP. A note says weather comes from Apple Weather, and location is only used to fetch local conditions. Fish count is partly visible at the bottom.">
+            </div>
+            <figcaption>Settings stay short: clock, weather, location, and how many fish. Changes apply right away.</figcaption>
+          </figure>
         </li>
       </ul>
     </section>
@@ -149,46 +180,38 @@
     <section class="block settings" id="settings" aria-labelledby="settings-title">
       <div class="settings-copy">
         <h2 id="settings-title">Settings stay short</h2>
-        <p>Clock, weather, and location. Location is approximate, and it is only there so the weather is for where you are.</p>
+        <p>Clock, weather, and location. You can use this Apple TV’s location, or enter a city or ZIP. Location is only used to fetch local conditions from Apple Weather.</p>
       </div>
       <figure class="stage stage-small">
         <div class="wall wall-small">
           <div class="tv">
             <div class="bezel">
-              <div class="screen">
-                <div class="settings-screen">
-                  <p class="set-name">Settings</p>
-                  <ul class="set-rows">
-                    <li><span>Clock</span><span>On</span></li>
-                    <li><span>Weather</span><span>On</span></li>
-                    <li><span>Location</span><span>Approximate</span></li>
-                  </ul>
-                </div>
-              </div>
+              <img class="shot-in-tv" src="shots/settings.png" width="1920" height="1080" alt="Reefcalm Settings over the aquarium, showing clock, weather, and location controls.">
             </div>
           </div>
         </div>
-        <figcaption>Illustration of a settings screen, not a photograph.</figcaption>
+        <figcaption>The real Settings screen, captured in the simulator.</figcaption>
       </figure>
     </section>
 
     <div class="block notes">
       <section id="privacy" aria-labelledby="privacy-title">
         <h2 id="privacy-title">Privacy</h2>
-        <p>No accounts, no ads, and no tracking. The app plans to use approximate location only to fetch local weather via Apple WeatherKit.</p>
-        <p><a href="privacy.html">Read the privacy page</a></p>
+        <p>No accounts, no ads, and no tracking. If you turn weather on, Reefcalm uses the Apple TV’s location, or a city or ZIP you type, only to fetch current conditions from Apple Weather.</p>
+        <p><a href="privacy.html">Read the privacy policy</a></p>
       </section>
       <section id="support" aria-labelledby="support-title">
         <h2 id="support-title">Support</h2>
-        <p>A support contact is coming soon.</p>
+        <p>For help with Reefcalm, email <a href="mailto:erdunn706@gmail.com">erdunn706@gmail.com</a>.</p>
+        <p><a href="support.html">Support page</a></p>
       </section>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>© 2026 Reefcalm</p>
-      <p>Weather in the app will be provided by Apple Weather.</p>
+      <p>© 2026 Edward Dunn</p>
+      <p>Weather in the app is provided by Apple Weather.</p>
     </div>
   </footer>
 </body>
